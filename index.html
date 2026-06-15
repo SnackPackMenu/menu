@@ -15,6 +15,42 @@ body{margin:0;padding:20px;background:linear-gradient(180deg,#000,#111);color:#f
 .collab-price{margin-top:12px;font-size:34px;font-weight:bold;color:#39ff14;text-shadow:0 0 10px #39ff14}
 .reserve{border-color:#00ffff}.upgrade{border-color:#39ff14}.first{border-color:#ff69b4}.executive{border-color:#ff4500}.vip{border-color:#ffffff}.private{border-color:#ffcc00}
 .back-button{display:block;width:300px;text-align:center;margin:40px auto;padding:16px;background:#00ffff;color:black;font-size:22px;font-weight:bold;text-decoration:none;border-radius:12px;box-shadow:0 0 15px #00ffff}
+
+.price-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.price-pill{
+  flex:1;
+  min-width:120px;
+  text-align:center;
+  padding:12px 10px;
+  border-radius:12px;
+  background:rgba(57,255,20,.12);
+  border:1px solid rgba(57,255,20,.8);
+  box-shadow:0 0 10px rgba(57,255,20,.35);
+}
+.price-pill span{
+  display:block;
+  color:#ccc;
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:4px;
+}
+.price-pill strong{
+  color:#39ff14;
+  font-size:26px;
+  text-shadow:0 0 10px #39ff14;
+}
+@media(max-width:600px){
+  .header h1{font-size:34px}
+  .collab-name{font-size:26px}
+  .collab-mix{font-size:20px}
+  .price-pill strong{font-size:24px}
+}
+
 </style>
 </head>
 <body>
@@ -23,12 +59,12 @@ body{margin:0;padding:20px;background:linear-gradient(180deg,#000,#111);color:#f
 <p>Exclusive Mixed-Strain Blends</p>
 </div>
 
-<div class="collab-card reserve"><div class="collab-name">Captain's Reserve</div><div class="collab-mix">Sweet Spot+ × Runway</div><div class="collab-price">$80/Oz</div></div>
-<div class="collab-card upgrade"><div class="collab-name">Captain's Upgrade</div><div class="collab-mix">Super Nose Candy × Runway</div><div class="collab-price">$90/Oz</div></div>
-<div class="collab-card first"><div class="collab-name">First Class</div><div class="collab-mix">Sweet Spot+ × Ground Crew</div><div class="collab-price">$100/Oz</div></div>
-<div class="collab-card executive"><div class="collab-name">Executive Class</div><div class="collab-mix">Super Nose Candy × Ground Crew</div><div class="collab-price">$110/Oz</div></div>
-<div class="collab-card vip"><div class="collab-name">VIP Lounge</div><div class="collab-mix">Snowballs × Runway</div><div class="collab-price">$120/Oz</div></div>
-<div class="collab-card private"><div class="collab-name">Private Jet</div><div class="collab-mix">Snowballs × Ground Crew</div><div class="collab-price">$130/Oz</div></div>
+<div class="collab-card reserve"><div class="collab-name">Captain's Reserve</div><div class="collab-mix">Sweet Spot+ × Runway</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$25</strong></div><div class="price-pill"><span>Half</span><strong>$40</strong></div><div class="price-pill"><span>Oz</span><strong>$80</strong></div></div></div>
+<div class="collab-card upgrade"><div class="collab-name">Captain's Upgrade</div><div class="collab-mix">Super Nose Candy × Runway</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$25</strong></div><div class="price-pill"><span>Half</span><strong>$45</strong></div><div class="price-pill"><span>Oz</span><strong>$90</strong></div></div></div>
+<div class="collab-card first"><div class="collab-name">First Class</div><div class="collab-mix">Sweet Spot+ × Ground Crew</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$30</strong></div><div class="price-pill"><span>Half</span><strong>$50</strong></div><div class="price-pill"><span>Oz</span><strong>$100</strong></div></div></div>
+<div class="collab-card executive"><div class="collab-name">Executive Class</div><div class="collab-mix">Super Nose Candy × Ground Crew</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$35</strong></div><div class="price-pill"><span>Half</span><strong>$55</strong></div><div class="price-pill"><span>Oz</span><strong>$110</strong></div></div></div>
+<div class="collab-card vip"><div class="collab-name">VIP Lounge</div><div class="collab-mix">Snowballs × Runway</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$35</strong></div><div class="price-pill"><span>Half</span><strong>$60</strong></div><div class="price-pill"><span>Oz</span><strong>$120</strong></div></div></div>
+<div class="collab-card private"><div class="collab-name">Private Jet</div><div class="collab-mix">Snowballs × Ground Crew</div><div class="price-row"><div class="price-pill"><span>Quarter</span><strong>$40</strong></div><div class="price-pill"><span>Half</span><strong>$65</strong></div><div class="price-pill"><span>Oz</span><strong>$130</strong></div></div></div>
 
 <a href="https://snackpackmenu.github.io/menu4/" class="back-button">⬅ Back To Main Menu</a>
 </body>
